@@ -30,8 +30,12 @@ export default async function ContactPage({
             <ul className="mt-6 space-y-4 text-sm">
               <li>
                 <span className="block font-semibold text-ae-charcoal">Phone</span>
-                <a href="tel:+263000000000" className="text-ae-warmgrey hover:text-ae-orange">
-                  +263 00 000 0000
+                <a href="tel:+263773857530" className="text-ae-warmgrey hover:text-ae-orange">
+                  +263 77 385 7530
+                </a>
+                <br />
+                <a href="tel:+12677925303" className="text-ae-warmgrey hover:text-ae-orange">
+                  +1 267 792 5303
                 </a>
               </li>
               <li>
@@ -43,12 +47,12 @@ export default async function ContactPage({
               <li>
                 <span className="block font-semibold text-ae-charcoal">WhatsApp</span>
                 <a
-                  href="https://wa.me/263000000000"
+                  href="https://wa.me/263773857530"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-ae-warmgrey hover:text-ae-orange"
                 >
-                  +263 00 000 0000
+                  +263 77 385 7530
                 </a>
               </li>
               <li>
