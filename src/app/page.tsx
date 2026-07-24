@@ -1,65 +1,200 @@
-import Image from "next/image";
+import Link from "next/link";
+import Reveal from "@/components/Reveal";
+
+const WHAT_WE_DO = [
+  {
+    title: "Solar Power Systems",
+    description: "Off-grid, hybrid & grid-tied, residential to industrial.",
+    href: "/solar-power",
+  },
+  {
+    title: "Solar Water Pumping",
+    description: "Boreholes, piped schemes, irrigation, any size.",
+    href: "/water-pumping",
+  },
+  {
+    title: "System Sizing Consultancy",
+    description: "Accurate, engineered sizing, not guesswork.",
+    href: "/consultancy",
+  },
+  {
+    title: "Energy Audits",
+    description: "Understand your bill, cut it, and go greener doing it.",
+    href: "/consultancy",
+  },
+];
+
+const WHY_US = [
+  {
+    title: "High-level technical expertise",
+    description:
+      "Hydraulic modelling & simulation for brands like Grundfos, Lorentz, DAB and CRI.",
+  },
+  {
+    title: "Engineered sizing",
+    description: "Every standard package is a guide; real projects get a real assessment.",
+  },
+  {
+    title: "Local relevance",
+    description: "Designed around Zimbabwean and African grid, water and climate realities.",
+  },
+];
+
+const HOW_IT_WORKS = [
+  {
+    step: "1",
+    title: "Tell us your needs",
+    description: "Select your appliances or water needs and enter the quantities that match your home.",
+  },
+  {
+    step: "2",
+    title: "Get sized instantly",
+    description:
+      "Get your Solar Array, Inverter and Battery Bank sizes instantly, or, for larger, commercial or agricultural needs, get connected straight to an engineer.",
+  },
+  {
+    step: "3",
+    title: "Move forward",
+    description: "Move forward to quotation and installation, backed by our engineering expertise.",
+  },
+];
+
+const BRANDS = ["Grundfos", "Lorentz", "DAB", "CRI"];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      {/* Hero */}
+      <section className="bg-ae-charcoal text-white">
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
+          <p className="animate-fade-in-up font-heading text-sm font-semibold uppercase tracking-wide text-ae-orange">
+            Powering Your Future
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          <h1
+            className="animate-fade-in-up mt-3 max-w-3xl font-heading text-4xl font-bold leading-tight sm:text-5xl"
+            style={{ animationDelay: "80ms" }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            Absolute Energy: Powering Your Future
+          </h1>
+          <p
+            className="animate-fade-in-up mt-5 max-w-2xl text-lg text-white/80"
+            style={{ animationDelay: "160ms" }}
           >
-            Documentation
-          </a>
+            Solar power and solar water pumping solutions for homes, farms and businesses across
+            Zimbabwe and Africa.
+          </p>
+          <div
+            className="animate-fade-in-up mt-8 flex flex-wrap gap-4"
+            style={{ animationDelay: "240ms" }}
+          >
+            <Link
+              href="/get-solution"
+              className="rounded-full bg-ae-orange px-7 py-3 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-ae-orange/90 hover:shadow-lg hover:shadow-ae-orange/20 active:translate-y-0"
+            >
+              Get My Solution
+            </Link>
+            <Link
+              href="/get-solution"
+              className="rounded-full border border-white/30 px-7 py-3 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-ae-orange hover:text-ae-orange active:translate-y-0"
+            >
+              Talk to an Engineer
+            </Link>
+          </div>
+
+          <div
+            className="animate-fade-in-up mt-14 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-white/10 pt-8"
+            style={{ animationDelay: "320ms" }}
+          >
+            <span className="text-xs font-semibold uppercase tracking-wide text-white/50">
+              Engineered with globally recognised pump brands
+            </span>
+            {BRANDS.map((brand) => (
+              <span key={brand} className="font-heading text-sm font-semibold text-white/70">
+                {brand}
+              </span>
+            ))}
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* What we do */}
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <Reveal>
+          <h2 className="font-heading text-2xl font-bold text-ae-charcoal sm:text-3xl">What We Do</h2>
+        </Reveal>
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {WHAT_WE_DO.map((item, i) => (
+            <Reveal key={item.title} delayMs={i * 80}>
+              <Link
+                href={item.href}
+                className="group block h-full rounded-xl border border-ae-lightgrey bg-white p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-ae-orange/40 hover:shadow-md"
+              >
+                <h3 className="font-heading text-lg font-semibold text-ae-charcoal group-hover:text-ae-orange">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm text-ae-warmgrey">{item.description}</p>
+              </Link>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      {/* Why Absolute Energy */}
+      <section className="bg-ae-lightgrey">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+          <Reveal>
+            <h2 className="font-heading text-2xl font-bold text-ae-charcoal sm:text-3xl">
+              Why Absolute Energy
+            </h2>
+          </Reveal>
+          <div className="mt-8 grid gap-6 sm:grid-cols-3">
+            {WHY_US.map((item, i) => (
+              <Reveal key={item.title} delayMs={i * 80}>
+                <div className="h-full rounded-xl bg-white p-6 transition-transform duration-200 hover:-translate-y-1">
+                  <h3 className="font-heading text-base font-semibold text-ae-orange">{item.title}</h3>
+                  <p className="mt-2 text-sm text-ae-warmgrey">{item.description}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <Reveal>
+          <h2 className="font-heading text-2xl font-bold text-ae-charcoal sm:text-3xl">How It Works</h2>
+        </Reveal>
+        <div className="mt-8 grid gap-8 sm:grid-cols-3">
+          {HOW_IT_WORKS.map((item, i) => (
+            <Reveal key={item.step} delayMs={i * 100}>
+              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-ae-orange font-heading text-lg font-bold text-white">
+                {item.step}
+              </span>
+              <h3 className="mt-4 font-heading text-lg font-semibold text-ae-charcoal">{item.title}</h3>
+              <p className="mt-2 text-sm text-ae-warmgrey">{item.description}</p>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      {/* Bottom CTA */}
+      <section className="bg-ae-charcoal text-white">
+        <div className="mx-auto max-w-6xl px-4 py-16 text-center sm:px-6">
+          <Reveal>
+            <h2 className="font-heading text-2xl font-bold sm:text-3xl">Ready to power your future?</h2>
+            <p className="mx-auto mt-3 max-w-xl text-white/75">
+              Get an engineered sizing estimate for your home, farm or business in minutes.
+            </p>
+            <Link
+              href="/get-solution"
+              className="mt-6 inline-block rounded-full bg-ae-orange px-7 py-3 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-ae-orange/90 hover:shadow-lg hover:shadow-ae-orange/20 active:translate-y-0"
+            >
+              Get My Solution
+            </Link>
+          </Reveal>
+        </div>
+      </section>
+    </>
   );
 }
