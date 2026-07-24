@@ -117,6 +117,63 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About Us */}
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <Reveal>
+          <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
+            <div>
+              <p className="font-heading text-sm font-semibold uppercase tracking-wide text-ae-orange">
+                About Us
+              </p>
+              <h2 className="mt-2 font-heading text-2xl font-bold text-ae-charcoal sm:text-3xl">
+                Zimbabwe and Africa&apos;s trusted name in solar energy and water pumping design
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-ae-warmgrey">
+                Absolute Energy (Private) Limited is a Zimbabwe-based clean energy engineering and
+                consultancy company serving Zimbabwe and the wider African region. We design, size and
+                support the implementation of solar power and solar-driven water pumping solutions across
+                residential, commercial, industrial and agricultural markets.
+              </p>
+              <Link
+                href="/about"
+                className="mt-6 inline-block rounded-full border border-ae-charcoal px-6 py-2.5 text-sm font-semibold text-ae-charcoal transition-all duration-200 hover:-translate-y-0.5 hover:border-ae-orange hover:text-ae-orange"
+              >
+                More About Us
+              </Link>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+              <div className="rounded-xl bg-ae-lightgrey p-5">
+                <h3 className="font-heading text-sm font-semibold uppercase tracking-wide text-ae-orange">
+                  Mission
+                </h3>
+                <p className="mt-2 text-sm text-ae-warmgrey">
+                  Reliable, correctly-engineered clean energy and water pumping that lowers costs and
+                  strengthens power security.
+                </p>
+              </div>
+              <div className="rounded-xl bg-ae-lightgrey p-5">
+                <h3 className="font-heading text-sm font-semibold uppercase tracking-wide text-ae-orange">
+                  Vision
+                </h3>
+                <p className="mt-2 text-sm text-ae-warmgrey">
+                  Every African household, farm and enterprise running on clean, self-generated power and
+                  water.
+                </p>
+              </div>
+              <div className="rounded-xl bg-ae-lightgrey p-5">
+                <h3 className="font-heading text-sm font-semibold uppercase tracking-wide text-ae-orange">
+                  Goal
+                </h3>
+                <p className="mt-2 text-sm text-ae-warmgrey">
+                  Known for engineering accuracy, honest sizing, and measurable reductions in bills and
+                  carbon footprint.
+                </p>
+              </div>
+            </div>
+          </div>
+        </Reveal>
+      </section>
+
       {/* What we do */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <Reveal>
