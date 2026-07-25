@@ -103,8 +103,16 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-white/10 pt-6 text-xs text-white/50">
-          &copy; {new Date().getFullYear()} Absolute Energy (Private) Limited. All rights reserved.
+        <div className="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-white/50">
+          <p>&copy; {new Date().getFullYear()} Absolute Energy (Private) Limited. All rights reserved.</p>
+          <div className="flex flex-wrap gap-x-4 gap-y-2">
+            <Link href="/terms" className="hover:text-ae-orange">
+              Terms &amp; Conditions
+            </Link>
+            <Link href="/privacy" className="hover:text-ae-orange">
+              Privacy Policy
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
