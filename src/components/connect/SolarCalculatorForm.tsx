@@ -84,6 +84,7 @@ export default function SolarCalculatorForm() {
   if (result) {
     return (
       <ResultsPanel
+        heading="Solar Power System"
         items={[
           { label: "Solar Array Size", value: `${result.solarArrayKWp} kWp` },
           {

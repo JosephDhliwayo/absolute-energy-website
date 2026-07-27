@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { renderResultCard } from "@/lib/resultCard";
 
 export interface ResultItem {
   label: string;
@@ -10,6 +11,7 @@ export interface ResultItem {
 }
 
 export default function ResultsPanel({
+  heading,
   items,
   note,
   caveat,
@@ -17,6 +19,7 @@ export default function ResultsPanel({
   quotationHref,
   consultationHref,
 }: {
+  heading: string;
   items: ResultItem[];
   note?: string;
   caveat?: string;
@@ -26,6 +29,7 @@ export default function ResultsPanel({
 }) {
   const [copied, setCopied] = useState(false);
   const [canShare, setCanShare] = useState(false);
+  const [busy, setBusy] = useState<"download" | "share" | null>(null);
 
   useEffect(() => {
     // Feature-detect after mount to avoid an SSR/client markup mismatch (navigator is undefined on the server).
@@ -48,23 +52,48 @@ export default function ResultsPanel({
   }
 
   async function handleShare() {
+    setBusy("share");
     try {
-      await navigator.share({ title: "Absolute Energy: AE Connect result", text: summaryText });
+      const blob = await renderResultCard({ heading, items, caveat, note });
+      const file = new File([blob], "absolute-energy-ae-connect-result.png", { type: "image/png" });
+      if (navigator.canShare?.({ files: [file] })) {
+        await navigator.share({ title: "Absolute Energy: AE Connect result", files: [file] });
+      } else {
+        await navigator.share({ title: "Absolute Energy: AE Connect result", text: summaryText });
+      }
     } catch {
-      // Share cancelled or unavailable, silently ignore: share button is a convenience only.
+      // Share cancelled, rendering failed, or unavailable, silently ignore: share is a convenience only.
+    } finally {
+      setBusy(null);
     }
   }
 
-  function handleDownload() {
-    const blob = new Blob([summaryText], { type: "text/plain" });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = "absolute-energy-ae-connect-result.txt";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
+  async function handleDownload() {
+    setBusy("download");
+    try {
+      const blob = await renderResultCard({ heading, items, caveat, note });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "absolute-energy-ae-connect-result.png";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+    } catch {
+      // Rendering failed (e.g. logo asset unreachable) — fall back to a plain-text download.
+      const blob = new Blob([summaryText], { type: "text/plain" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "absolute-energy-ae-connect-result.txt";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+    } finally {
+      setBusy(null);
+    }
   }
 
   return (
@@ -108,17 +137,19 @@ export default function ResultsPanel({
         <button
           type="button"
           onClick={handleDownload}
-          className="rounded-full border border-ae-lightgrey px-6 py-2.5 text-sm font-semibold text-ae-charcoal transition-all duration-200 hover:-translate-y-0.5 hover:border-ae-orange hover:text-ae-orange"
+          disabled={busy === "download"}
+          className="rounded-full border border-ae-lightgrey px-6 py-2.5 text-sm font-semibold text-ae-charcoal transition-all duration-200 hover:-translate-y-0.5 hover:border-ae-orange hover:text-ae-orange disabled:pointer-events-none disabled:opacity-60"
         >
-          Download
+          {busy === "download" ? "Preparing…" : "Download"}
         </button>
         {canShare ? (
           <button
             type="button"
             onClick={handleShare}
-            className="rounded-full border border-ae-lightgrey px-6 py-2.5 text-sm font-semibold text-ae-charcoal transition-all duration-200 hover:-translate-y-0.5 hover:border-ae-orange hover:text-ae-orange"
+            disabled={busy === "share"}
+            className="rounded-full border border-ae-lightgrey px-6 py-2.5 text-sm font-semibold text-ae-charcoal transition-all duration-200 hover:-translate-y-0.5 hover:border-ae-orange hover:text-ae-orange disabled:pointer-events-none disabled:opacity-60"
           >
-            Share
+            {busy === "share" ? "Preparing…" : "Share"}
           </button>
         ) : (
           <button

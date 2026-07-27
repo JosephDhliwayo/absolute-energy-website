@@ -81,6 +81,7 @@ export default function WaterCalculatorForm() {
   if (result) {
     return (
       <ResultsPanel
+        heading="Water Pumping System"
         items={[
           { label: "Indicative Solar Array Size", value: `${result.indicativeSolarArrayKWp} kWp` },
           {
