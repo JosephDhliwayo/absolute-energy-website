@@ -22,9 +22,9 @@
 
 body {
   background-image:
-    radial-gradient(60% 45% at 15% 15%, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0) 70%),
+    radial-gradient(60% 45% at 15% 15%, rgba(232, 121, 30, 0.12), rgba(232, 121, 30, 0) 70%),
     url("/water-bg.svg"),
-    linear-gradient(180deg, #eef8fb 0%, #dcf0f7 45%, #f3fafc 100%);
+    linear-gradient(180deg, #ffffff 0%, #f2f2f2 45%, #ffffff 100%);
   background-repeat: no-repeat, repeat, no-repeat;
   background-attachment: fixed, fixed, scroll;
   background-size: 140% 140%, 340px 340px, 100% 100%;
