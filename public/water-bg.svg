@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240">
+  <defs>
+    <pattern id="ae-water" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M0,24 Q30,6 60,24 T120,24" fill="none" stroke="#bfe4f2" stroke-width="2" opacity="0.55" />
+      <path d="M0,58 Q30,40 60,58 T120,58" fill="none" stroke="#a9d9ec" stroke-width="2" opacity="0.4" />
+      <path d="M0,92 Q30,74 60,92 T120,92" fill="none" stroke="#8fcbe6" stroke-width="2" opacity="0.28" />
+    </pattern>
+  </defs>
+  <rect width="240" height="240" fill="url(#ae-water)" />
+</svg>
