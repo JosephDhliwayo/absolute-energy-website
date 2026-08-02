@@ -22,12 +22,31 @@
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
+  background-image: url("/water-bg.svg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 300px 300px;
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   /* Unbroken strings (emails, phone numbers, long words) must never force
      a grid/flex track wider than very narrow viewports (e.g. 240px devices). */
   overflow-wrap: anywhere;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  body {
+    animation: water-drift 36s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes water-drift {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 300px 180px;
+  }
 }
 
 html,
