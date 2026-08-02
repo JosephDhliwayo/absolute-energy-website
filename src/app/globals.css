@@ -22,12 +22,34 @@
 }
 
 body {
-  background: var(--background);
+  background-image:
+    radial-gradient(60% 45% at 15% 15%, rgba(232, 121, 30, 0.18), rgba(232, 121, 30, 0) 70%),
+    url("/water-bg.svg"),
+    linear-gradient(180deg, #000000 0%, #141414 45%, #000000 100%);
+  background-repeat: no-repeat, repeat, no-repeat;
+  background-attachment: fixed, fixed, scroll;
+  background-size: 140% 140%, 340px 340px, 100% 100%;
+  background-position: 0% 0%, 0 0, 0 0;
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   /* Unbroken strings (emails, phone numbers, long words) must never force
      a grid/flex track wider than very narrow viewports (e.g. 240px devices). */
   overflow-wrap: anywhere;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  body {
+    animation: water-drift 36s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes water-drift {
+  from {
+    background-position: 0% 0%, 0 0, 0 0;
+  }
+  to {
+    background-position: 20% 15%, 340px 200px, 0 0;
+  }
 }
 
 html,
