@@ -11,7 +11,7 @@ const ROWS = [
 
 export default function SolarPackagesTable() {
   return (
-    <div className="overflow-x-auto rounded-xl border border-ae-lightgrey">
+    <div className="overflow-x-auto rounded-xl border border-ae-lightgrey bg-white">
       <table className="w-full min-w-[420px] text-left text-sm">
         <thead className="bg-ae-charcoal text-white">
           <tr>

@@ -55,9 +55,9 @@ export default function SolarPowerPage() {
         <div className="grid gap-6 md:grid-cols-3">
           {SYSTEM_TYPES.map((item, i) => (
             <Reveal key={item.title} delayMs={i * 80}>
-              <div className="h-full rounded-xl border border-ae-lightgrey p-6 transition-all duration-200 hover:-translate-y-1 hover:border-ae-orange/40 hover:shadow-md">
+              <div className="h-full rounded-xl border border-white/15 p-6 transition-all duration-200 hover:-translate-y-1 hover:border-ae-orange/40">
                 <h2 className="font-heading text-lg font-semibold text-ae-orange">{item.title}</h2>
-                <p className="mt-3 text-sm leading-relaxed text-ae-warmgrey">{item.description}</p>
+                <p className="mt-3 text-sm leading-relaxed text-white/70">{item.description}</p>
               </div>
             </Reveal>
           ))}
@@ -84,15 +84,15 @@ export default function SolarPowerPage() {
 
       <Reveal>
         <section className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6">
-          <h2 className="font-heading text-2xl font-bold text-ae-charcoal">See what size system you need</h2>
-          <p className="mx-auto mt-3 max-w-xl text-ae-warmgrey">
+          <h2 className="font-heading text-2xl font-bold text-white">See what size system you need</h2>
+          <p className="mx-auto mt-3 max-w-xl text-white/70">
             Standard residential packages are pre-sized instantly in AE Connect. Anything larger, or C&amp;I
             and agricultural, is routed straight to an engineer.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-4">
             <Link
               href="/packages"
-              className="rounded-full border border-ae-charcoal px-6 py-2.5 text-sm font-semibold text-ae-charcoal transition-all duration-200 hover:-translate-y-0.5 hover:border-ae-orange hover:text-ae-orange"
+              className="rounded-full border border-white/30 px-6 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-ae-orange hover:text-ae-orange"
             >
               View Standard Packages
             </Link>

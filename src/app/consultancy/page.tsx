@@ -27,8 +27,8 @@ export default function ConsultancyPage() {
 
       <Reveal>
         <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
-          <h2 className="font-heading text-2xl font-bold text-ae-charcoal">Solar System Sizing Consultancy</h2>
-          <p className="mt-4 text-base leading-relaxed text-ae-warmgrey">
+          <h2 className="font-heading text-2xl font-bold text-white">Solar System Sizing Consultancy</h2>
+          <p className="mt-4 text-base leading-relaxed text-white/70">
             Independent, engineering-based sizing advice for clients who want a second opinion or a custom
             design outside our standard packages, covering load calculations, array/inverter/battery
             selection, and system architecture (off-grid, hybrid or grid-tied).
@@ -68,8 +68,8 @@ export default function ConsultancyPage() {
 
       <Reveal>
         <section className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6">
-          <h2 className="font-heading text-2xl font-bold text-ae-charcoal">Start the conversation</h2>
-          <p className="mx-auto mt-3 max-w-xl text-ae-warmgrey">
+          <h2 className="font-heading text-2xl font-bold text-white">Start the conversation</h2>
+          <p className="mx-auto mt-3 max-w-xl text-white/70">
             Book a consultation or an energy audit directly through AE Connect.
           </p>
           <Link

@@ -27,13 +27,13 @@ export default function SolarCalculatorPage() {
 
       <section className="mx-auto max-w-4xl px-4 pb-20 sm:px-6">
         <Reveal>
-          <h2 className="font-heading text-xl font-semibold text-ae-charcoal">Your Appliances</h2>
-          <p className="mt-2 text-sm text-ae-warmgrey">
+          <h2 className="font-heading text-xl font-semibold text-white">Your Appliances</h2>
+          <p className="mt-2 text-sm text-white/70">
             For each appliance you use, enter how many you have and how many hours a day you run them. We&apos;ve
             suggested a typical power rating for each. Adjust it if you know your actual value.
           </p>
         </Reveal>
-        <div className="mt-6">
+        <div className="mt-6 rounded-xl border border-ae-lightgrey bg-white p-6 sm:p-8">
           <SolarCalculatorForm />
         </div>
       </section>

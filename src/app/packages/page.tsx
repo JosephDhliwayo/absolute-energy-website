@@ -22,8 +22,8 @@ export default function PackagesPage() {
 
       <Reveal>
         <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
-          <h2 className="font-heading text-2xl font-bold text-ae-charcoal">Residential Solar Power</h2>
-          <p className="mt-3 text-sm text-ae-warmgrey">
+          <h2 className="font-heading text-2xl font-bold text-white">Residential Solar Power</h2>
+          <p className="mt-3 text-sm text-white/70">
             Indicative sizes for common, standard residential setups, from 1 kVA up to 12 kVA.
           </p>
           <div className="mt-6">
@@ -51,10 +51,10 @@ export default function PackagesPage() {
 
       <Reveal>
         <section className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6">
-          <h2 className="font-heading text-2xl font-bold text-ae-charcoal">
+          <h2 className="font-heading text-2xl font-bold text-white">
             These tables aren&apos;t a shortcut
           </h2>
-          <p className="mx-auto mt-3 max-w-xl text-ae-warmgrey">
+          <p className="mx-auto mt-3 max-w-xl text-white/70">
             There is no package you can simply pick. Every client enters their own appliances or site details
             in AE Connect to get a real, sized result.
           </p>

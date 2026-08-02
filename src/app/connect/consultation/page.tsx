@@ -28,7 +28,9 @@ export default async function ConsultationPage({
       />
 
       <section className="mx-auto max-w-2xl px-4 py-16 sm:px-6">
-        <ConsultationForm initialType={type} context={context} />
+        <div className="rounded-xl bg-white p-6 sm:p-8">
+          <ConsultationForm initialType={type} context={context} />
+        </div>
       </section>
     </>
   );

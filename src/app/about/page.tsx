@@ -43,15 +43,15 @@ export default function AboutPage() {
 
       <Reveal>
         <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
-          <h2 className="font-heading text-2xl font-bold text-ae-charcoal">Who We Are</h2>
-          <p className="mt-4 text-base leading-relaxed text-ae-warmgrey">
+          <h2 className="font-heading text-2xl font-bold text-white">Who We Are</h2>
+          <p className="mt-4 text-base leading-relaxed text-white/70">
             Absolute Energy (Private) Limited is a Zimbabwe-based clean energy engineering and consultancy
             company serving Zimbabwe and the wider African region. We design, size and support the
             implementation of solar power and solar-driven water pumping solutions across residential,
             commercial, industrial and agricultural markets, and we provide independent consultancy in solar
             system sizing and energy auditing.
           </p>
-          <p className="mt-4 text-base leading-relaxed text-ae-warmgrey">
+          <p className="mt-4 text-base leading-relaxed text-white/70">
             Our scope covers off-grid, hybrid and grid-tied solar power systems, and solar-driven piped water
             schemes of any size, engineered using hydraulic modelling and simulation software for globally
             recognised pump brands including Grundfos, Lorentz, DAB and CRI, among others.
@@ -103,14 +103,14 @@ export default function AboutPage() {
 
       <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
         <Reveal>
-          <h2 className="font-heading text-2xl font-bold text-ae-charcoal">What We Actually Do</h2>
+          <h2 className="font-heading text-2xl font-bold text-white">What We Actually Do</h2>
         </Reveal>
         <div className="mt-8 space-y-6">
           {WHAT_WE_DO.map((item, i) => (
             <Reveal key={item.title} delayMs={i * 70}>
               <div className="border-l-4 border-ae-orange pl-4">
-                <h3 className="font-heading text-base font-semibold text-ae-charcoal">{item.title}</h3>
-                <p className="mt-1 text-sm leading-relaxed text-ae-warmgrey">{item.description}</p>
+                <h3 className="font-heading text-base font-semibold text-white">{item.title}</h3>
+                <p className="mt-1 text-sm leading-relaxed text-white/70">{item.description}</p>
               </div>
             </Reveal>
           ))}

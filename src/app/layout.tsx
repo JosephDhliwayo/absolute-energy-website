@@ -32,7 +32,7 @@ export default function RootLayout({
       lang="en"
       className={`${poppins.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-white text-ae-charcoal">
+      <body className="min-h-full flex flex-col text-white">
         {/* If JS never runs (blocked, unsupported browser), scroll-reveal content must not stay hidden. */}
         <noscript>
           <style>{`.reveal { opacity: 1 !important; transform: none !important; }`}</style>

@@ -26,9 +26,9 @@ export default function TermsPage() {
           Absolute Energy&apos;s actual business practices, before being relied on as legally binding.
         </div>
 
-        <div className="mt-10 space-y-10 text-sm leading-relaxed text-ae-warmgrey">
+        <div className="mt-10 space-y-10 text-sm leading-relaxed text-white/70">
           <div>
-            <h2 className="font-heading text-lg font-semibold text-ae-charcoal">1. Acceptance of Terms</h2>
+            <h2 className="font-heading text-lg font-semibold text-white">1. Acceptance of Terms</h2>
             <p className="mt-3">
               These Terms &amp; Conditions (&quot;Terms&quot;) govern your use of the Absolute Energy
               (Private) Limited website and the AE Connect sizing and quotation application
@@ -38,7 +38,7 @@ export default function TermsPage() {
           </div>
 
           <div>
-            <h2 className="font-heading text-lg font-semibold text-ae-charcoal">2. About Our Services</h2>
+            <h2 className="font-heading text-lg font-semibold text-white">2. About Our Services</h2>
             <p className="mt-3">
               Absolute Energy is a Zimbabwe-based clean energy engineering and consultancy company. Our
               website provides information about our solar power, solar water pumping, consultancy and
@@ -49,7 +49,7 @@ export default function TermsPage() {
           </div>
 
           <div>
-            <h2 className="font-heading text-lg font-semibold text-ae-charcoal">
+            <h2 className="font-heading text-lg font-semibold text-white">
               3. AE Connect Results Are Indicative
             </h2>
             <p className="mt-3">
@@ -64,7 +64,7 @@ export default function TermsPage() {
           </div>
 
           <div>
-            <h2 className="font-heading text-lg font-semibold text-ae-charcoal">
+            <h2 className="font-heading text-lg font-semibold text-white">
               4. Accuracy of Information You Provide
             </h2>
             <p className="mt-3">
@@ -77,7 +77,7 @@ export default function TermsPage() {
           </div>
 
           <div>
-            <h2 className="font-heading text-lg font-semibold text-ae-charcoal">
+            <h2 className="font-heading text-lg font-semibold text-white">
               5. Consultation Fees &amp; Payments
             </h2>
             <p className="mt-3">
@@ -91,7 +91,7 @@ export default function TermsPage() {
           </div>
 
           <div>
-            <h2 className="font-heading text-lg font-semibold text-ae-charcoal">6. Use of the Website</h2>
+            <h2 className="font-heading text-lg font-semibold text-white">6. Use of the Website</h2>
             <p className="mt-3">
               You agree to use the Services only for lawful purposes, and not to interfere with the
               proper functioning of the website or AE Connect, attempt to gain unauthorised access to
@@ -100,7 +100,7 @@ export default function TermsPage() {
           </div>
 
           <div>
-            <h2 className="font-heading text-lg font-semibold text-ae-charcoal">7. Intellectual Property</h2>
+            <h2 className="font-heading text-lg font-semibold text-white">7. Intellectual Property</h2>
             <p className="mt-3">
               The Absolute Energy name, logo, brand assets, website content and the AE Connect
               application are the property of Absolute Energy (Private) Limited or its licensors, and
@@ -110,7 +110,7 @@ export default function TermsPage() {
           </div>
 
           <div>
-            <h2 className="font-heading text-lg font-semibold text-ae-charcoal">
+            <h2 className="font-heading text-lg font-semibold text-white">
               8. Third-Party Services
             </h2>
             <p className="mt-3">
@@ -121,7 +121,7 @@ export default function TermsPage() {
           </div>
 
           <div>
-            <h2 className="font-heading text-lg font-semibold text-ae-charcoal">
+            <h2 className="font-heading text-lg font-semibold text-white">
               9. Limitation of Liability
             </h2>
             <p className="mt-3">
@@ -133,7 +133,7 @@ export default function TermsPage() {
           </div>
 
           <div>
-            <h2 className="font-heading text-lg font-semibold text-ae-charcoal">10. Governing Law</h2>
+            <h2 className="font-heading text-lg font-semibold text-white">10. Governing Law</h2>
             <p className="mt-3">
               These Terms are governed by the laws of Zimbabwe. Any disputes arising from these Terms or
               your use of the Services will be subject to the exclusive jurisdiction of the Zimbabwean
@@ -142,7 +142,7 @@ export default function TermsPage() {
           </div>
 
           <div>
-            <h2 className="font-heading text-lg font-semibold text-ae-charcoal">
+            <h2 className="font-heading text-lg font-semibold text-white">
               11. Changes to These Terms
             </h2>
             <p className="mt-3">
@@ -153,7 +153,7 @@ export default function TermsPage() {
           </div>
 
           <div>
-            <h2 className="font-heading text-lg font-semibold text-ae-charcoal">12. Contact Us</h2>
+            <h2 className="font-heading text-lg font-semibold text-white">12. Contact Us</h2>
             <p className="mt-3">
               Questions about these Terms can be sent to{" "}
               <a href="mailto:info@absoluteenergy.co.zw" className="font-semibold text-ae-orange">

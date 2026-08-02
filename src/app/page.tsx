@@ -125,10 +125,10 @@ export default function Home() {
               <p className="font-heading text-sm font-semibold uppercase tracking-wide text-ae-orange">
                 About Us
               </p>
-              <h2 className="mt-2 font-heading text-2xl font-bold text-ae-charcoal sm:text-3xl">
+              <h2 className="mt-2 font-heading text-2xl font-bold text-white sm:text-3xl">
                 Zimbabwe and Africa&apos;s trusted name in solar energy and water pumping design
               </h2>
-              <p className="mt-4 text-base leading-relaxed text-ae-warmgrey">
+              <p className="mt-4 text-base leading-relaxed text-white/70">
                 Absolute Energy (Private) Limited is a Zimbabwe-based clean energy engineering and
                 consultancy company serving Zimbabwe and the wider African region. We design, size and
                 support the implementation of solar power and solar-driven water pumping solutions across
@@ -136,7 +136,7 @@ export default function Home() {
               </p>
               <Link
                 href="/about"
-                className="mt-6 inline-block rounded-full border border-ae-charcoal px-6 py-2.5 text-sm font-semibold text-ae-charcoal transition-all duration-200 hover:-translate-y-0.5 hover:border-ae-orange hover:text-ae-orange"
+                className="mt-6 inline-block rounded-full border border-white/30 px-6 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-ae-orange hover:text-ae-orange"
               >
                 More About Us
               </Link>
@@ -177,7 +177,7 @@ export default function Home() {
       {/* What we do */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <Reveal>
-          <h2 className="font-heading text-2xl font-bold text-ae-charcoal sm:text-3xl">What We Do</h2>
+          <h2 className="font-heading text-2xl font-bold text-white sm:text-3xl">What We Do</h2>
         </Reveal>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {WHAT_WE_DO.map((item, i) => (
@@ -220,7 +220,7 @@ export default function Home() {
       {/* How it works */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <Reveal>
-          <h2 className="font-heading text-2xl font-bold text-ae-charcoal sm:text-3xl">How It Works</h2>
+          <h2 className="font-heading text-2xl font-bold text-white sm:text-3xl">How It Works</h2>
         </Reveal>
         <div className="mt-8 grid gap-8 sm:grid-cols-3">
           {HOW_IT_WORKS.map((item, i) => (
@@ -228,8 +228,8 @@ export default function Home() {
               <span className="flex h-10 w-10 items-center justify-center rounded-full bg-ae-orange font-heading text-lg font-bold text-white">
                 {item.step}
               </span>
-              <h3 className="mt-4 font-heading text-lg font-semibold text-ae-charcoal">{item.title}</h3>
-              <p className="mt-2 text-sm text-ae-warmgrey">{item.description}</p>
+              <h3 className="mt-4 font-heading text-lg font-semibold text-white">{item.title}</h3>
+              <p className="mt-2 text-sm text-white/70">{item.description}</p>
             </Reveal>
           ))}
         </div>

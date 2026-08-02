@@ -23,9 +23,9 @@ export default function PrivacyPage() {
           Energy&apos;s actual data practices, before being relied on as legally binding.
         </div>
 
-        <div className="mt-10 space-y-10 text-sm leading-relaxed text-ae-warmgrey">
+        <div className="mt-10 space-y-10 text-sm leading-relaxed text-white/70">
           <div>
-            <h2 className="font-heading text-lg font-semibold text-ae-charcoal">1. Introduction</h2>
+            <h2 className="font-heading text-lg font-semibold text-white">1. Introduction</h2>
             <p className="mt-3">
               Absolute Energy (Private) Limited (&quot;Absolute Energy&quot;, &quot;we&quot;, &quot;us&quot;)
               respects your privacy. This Privacy Policy explains what information we collect through our
@@ -34,27 +34,27 @@ export default function PrivacyPage() {
           </div>
 
           <div>
-            <h2 className="font-heading text-lg font-semibold text-ae-charcoal">
+            <h2 className="font-heading text-lg font-semibold text-white">
               2. Information We Collect
             </h2>
             <p className="mt-3">We collect information you provide directly to us, including:</p>
             <ul className="mt-3 list-disc space-y-2 pl-5">
               <li>
-                <strong className="text-ae-charcoal">Contact form:</strong> name, email address,
+                <strong className="text-white">Contact form:</strong> name, email address,
                 phone/WhatsApp number, your message, and the service you&apos;re interested in.
               </li>
               <li>
-                <strong className="text-ae-charcoal">AE Connect sizing calculators:</strong> the
+                <strong className="text-white">AE Connect sizing calculators:</strong> the
                 appliance, site and usage details you enter (for example, appliance quantities and
                 runtimes, borehole depth, or daily water requirement) to generate a sizing result.
               </li>
               <li>
-                <strong className="text-ae-charcoal">Consultation requests:</strong> your name, contact
+                <strong className="text-white">Consultation requests:</strong> your name, contact
                 details, project location, a description of your project, and any file you choose to
                 attach (such as an electricity bill or site photo).
               </li>
               <li>
-                <strong className="text-ae-charcoal">Payment information:</strong> when consultation fees
+                <strong className="text-white">Payment information:</strong> when consultation fees
                 go live, payment details will be collected and processed by our payment provider, not
                 stored directly by Absolute Energy.
               </li>
@@ -67,7 +67,7 @@ export default function PrivacyPage() {
           </div>
 
           <div>
-            <h2 className="font-heading text-lg font-semibold text-ae-charcoal">
+            <h2 className="font-heading text-lg font-semibold text-white">
               3. How We Use Your Information
             </h2>
             <ul className="mt-3 list-disc space-y-2 pl-5">
@@ -80,7 +80,7 @@ export default function PrivacyPage() {
           </div>
 
           <div>
-            <h2 className="font-heading text-lg font-semibold text-ae-charcoal">
+            <h2 className="font-heading text-lg font-semibold text-white">
               4. Sharing Your Information
             </h2>
             <p className="mt-3">
@@ -93,7 +93,7 @@ export default function PrivacyPage() {
           </div>
 
           <div>
-            <h2 className="font-heading text-lg font-semibold text-ae-charcoal">
+            <h2 className="font-heading text-lg font-semibold text-white">
               5. Cookies &amp; Tracking
             </h2>
             <p className="mt-3">
@@ -104,7 +104,7 @@ export default function PrivacyPage() {
           </div>
 
           <div>
-            <h2 className="font-heading text-lg font-semibold text-ae-charcoal">6. Data Security</h2>
+            <h2 className="font-heading text-lg font-semibold text-white">6. Data Security</h2>
             <p className="mt-3">
               We take reasonable technical and organisational measures to protect the information you
               provide. However, no method of transmission or storage is completely secure, and we cannot
@@ -113,7 +113,7 @@ export default function PrivacyPage() {
           </div>
 
           <div>
-            <h2 className="font-heading text-lg font-semibold text-ae-charcoal">7. Data Retention</h2>
+            <h2 className="font-heading text-lg font-semibold text-white">7. Data Retention</h2>
             <p className="mt-3">
               We retain information for as long as necessary to respond to your enquiry, deliver a
               consultation or service, meet legal or accounting obligations, and resolve disputes, after
@@ -122,7 +122,7 @@ export default function PrivacyPage() {
           </div>
 
           <div>
-            <h2 className="font-heading text-lg font-semibold text-ae-charcoal">8. Your Rights</h2>
+            <h2 className="font-heading text-lg font-semibold text-white">8. Your Rights</h2>
             <p className="mt-3">
               Depending on applicable law, you may have the right to request access to, correction of, or
               deletion of your personal information, or to object to certain processing. To make a
@@ -131,7 +131,7 @@ export default function PrivacyPage() {
           </div>
 
           <div>
-            <h2 className="font-heading text-lg font-semibold text-ae-charcoal">
+            <h2 className="font-heading text-lg font-semibold text-white">
               9. Third-Party Links &amp; Embeds
             </h2>
             <p className="mt-3">
@@ -142,7 +142,7 @@ export default function PrivacyPage() {
           </div>
 
           <div>
-            <h2 className="font-heading text-lg font-semibold text-ae-charcoal">10. Children&apos;s Privacy</h2>
+            <h2 className="font-heading text-lg font-semibold text-white">10. Children&apos;s Privacy</h2>
             <p className="mt-3">
               Our Services are intended for business and household use by adults and are not directed at
               children. We do not knowingly collect personal information from children.
@@ -150,7 +150,7 @@ export default function PrivacyPage() {
           </div>
 
           <div>
-            <h2 className="font-heading text-lg font-semibold text-ae-charcoal">
+            <h2 className="font-heading text-lg font-semibold text-white">
               11. Changes to This Policy
             </h2>
             <p className="mt-3">
@@ -160,7 +160,7 @@ export default function PrivacyPage() {
           </div>
 
           <div>
-            <h2 className="font-heading text-lg font-semibold text-ae-charcoal">12. Contact Us</h2>
+            <h2 className="font-heading text-lg font-semibold text-white">12. Contact Us</h2>
             <p className="mt-3">
               For privacy questions or requests, contact us at{" "}
               <a href="mailto:info@absoluteenergy.co.zw" className="font-semibold text-ae-orange">

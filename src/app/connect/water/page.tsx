@@ -27,12 +27,12 @@ export default function WaterCalculatorPage() {
 
       <section className="mx-auto max-w-4xl px-4 pb-20 sm:px-6">
         <Reveal>
-          <h2 className="font-heading text-xl font-semibold text-ae-charcoal">Your Site Data</h2>
-          <p className="mt-2 text-sm text-ae-warmgrey">
+          <h2 className="font-heading text-xl font-semibold text-white">Your Site Data</h2>
+          <p className="mt-2 text-sm text-white/70">
             Tell us about your borehole, storage location and daily requirement to get an indicative sizing.
           </p>
         </Reveal>
-        <div className="mt-6">
+        <div className="mt-6 rounded-xl border border-ae-lightgrey bg-white p-6 sm:p-8">
           <WaterCalculatorForm />
         </div>
       </section>

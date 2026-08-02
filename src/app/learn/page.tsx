@@ -50,18 +50,18 @@ export default function LearnPage() {
 
       <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
         <Reveal>
-          <h2 className="font-heading text-2xl font-bold text-ae-charcoal">What Is a Solar System?</h2>
-          <p className="mt-3 text-base text-ae-warmgrey">Every solar power system is built from three core components:</p>
+          <h2 className="font-heading text-2xl font-bold text-white">What Is a Solar System?</h2>
+          <p className="mt-3 text-base text-white/70">Every solar power system is built from three core components:</p>
         </Reveal>
         <div className="mt-8 grid gap-6 sm:grid-cols-3">
           {COMPONENTS.map((item, i) => (
             <Reveal key={item.title} delayMs={i * 90}>
-              <div className="h-full rounded-xl border border-ae-lightgrey p-6 transition-transform duration-200 hover:-translate-y-1">
+              <div className="h-full rounded-xl border border-white/15 p-6 transition-transform duration-200 hover:-translate-y-1">
                 <span className="flex h-8 w-8 items-center justify-center rounded-full bg-ae-orange font-heading text-sm font-bold text-white">
                   {i + 1}
                 </span>
-                <h3 className="mt-4 font-heading text-base font-semibold text-ae-charcoal">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-ae-warmgrey">{item.description}</p>
+                <h3 className="mt-4 font-heading text-base font-semibold text-white">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-white/70">{item.description}</p>
               </div>
             </Reveal>
           ))}
@@ -110,8 +110,8 @@ export default function LearnPage() {
 
       <Reveal>
         <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
-          <h2 className="font-heading text-2xl font-bold text-ae-charcoal">Runtime Matters</h2>
-          <p className="mt-3 text-base leading-relaxed text-ae-warmgrey">
+          <h2 className="font-heading text-2xl font-bold text-white">Runtime Matters</h2>
+          <p className="mt-3 text-base leading-relaxed text-white/70">
             The longer an appliance runs each day, the more energy your battery needs to store. Tell us the
             hours you actually use each appliance, not the longest possible time, and we&apos;ll size a
             battery that fits your real day, not an oversized, overpriced one.

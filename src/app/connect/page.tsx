@@ -22,9 +22,9 @@ export default function ConnectLandingPage() {
         <div className="grid gap-8 lg:grid-cols-2">
           {/* Solar Power */}
           <Reveal delayMs={0}>
-            <div className="h-full rounded-2xl border border-ae-lightgrey p-6 transition-shadow duration-200 hover:shadow-lg sm:p-8">
-              <h2 className="font-heading text-xl font-semibold text-ae-charcoal">Solar Power</h2>
-              <p className="mt-2 text-sm text-ae-warmgrey">
+            <div className="h-full rounded-2xl border border-white/15 p-6 transition-shadow duration-200 hover:shadow-lg sm:p-8">
+              <h2 className="font-heading text-xl font-semibold text-white">Solar Power</h2>
+              <p className="mt-2 text-sm text-white/70">
                 Off-grid, hybrid or grid-tied, sized for your home&apos;s appliances.
               </p>
 
@@ -38,15 +38,15 @@ export default function ConnectLandingPage() {
 
               <Link
                 href="/connect/consultation?type=solar-ci"
-                className="mt-3 block rounded-xl border border-ae-charcoal px-5 py-4 text-center font-semibold text-ae-charcoal transition-all duration-200 hover:-translate-y-0.5 hover:border-ae-orange hover:text-ae-orange"
+                className="mt-3 block rounded-xl border border-white/30 px-5 py-4 text-center font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-ae-orange hover:text-ae-orange"
               >
                 Commercial &amp; Industrial (C&amp;I)
-                <span className="mt-1 block text-xs font-normal text-ae-warmgrey">
+                <span className="mt-1 block text-xs font-normal text-white/50">
                   Always a paid consultation + site assessment
                 </span>
               </Link>
 
-              <p className="mt-4 text-center text-xs text-ae-warmgrey">
+              <p className="mt-4 text-center text-xs text-white/70">
                 Prefer to skip the calculator?{" "}
                 <Link href="/connect/consultation?type=solar-straight" className="font-semibold text-ae-orange">
                   Book a straight consultation ($10)
@@ -57,9 +57,9 @@ export default function ConnectLandingPage() {
 
           {/* Water Pumping */}
           <Reveal delayMs={120}>
-            <div className="h-full rounded-2xl border border-ae-lightgrey p-6 transition-shadow duration-200 hover:shadow-lg sm:p-8">
-              <h2 className="font-heading text-xl font-semibold text-ae-charcoal">Water Pumping</h2>
-              <p className="mt-2 text-sm text-ae-warmgrey">
+            <div className="h-full rounded-2xl border border-white/15 p-6 transition-shadow duration-200 hover:shadow-lg sm:p-8">
+              <h2 className="font-heading text-xl font-semibold text-white">Water Pumping</h2>
+              <p className="mt-2 text-sm text-white/70">
                 Solar-driven borehole and piped water schemes, engineered to your site.
               </p>
 
@@ -75,15 +75,15 @@ export default function ConnectLandingPage() {
 
               <Link
                 href="/connect/consultation?type=water-agricultural"
-                className="mt-3 block rounded-xl border border-ae-charcoal px-5 py-4 text-center font-semibold text-ae-charcoal transition-all duration-200 hover:-translate-y-0.5 hover:border-ae-orange hover:text-ae-orange"
+                className="mt-3 block rounded-xl border border-white/30 px-5 py-4 text-center font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-ae-orange hover:text-ae-orange"
               >
                 Irrigation, Agricultural &amp; Community Schemes
-                <span className="mt-1 block text-xs font-normal text-ae-warmgrey">
+                <span className="mt-1 block text-xs font-normal text-white/50">
                   Always a paid consultation + mandatory site assessment
                 </span>
               </Link>
 
-              <p className="mt-4 text-center text-xs text-ae-warmgrey">
+              <p className="mt-4 text-center text-xs text-white/70">
                 Prefer to skip the calculator?{" "}
                 <Link href="/connect/consultation?type=water-residential" className="font-semibold text-ae-orange">
                   Book a straight consultation ($10)
@@ -93,7 +93,7 @@ export default function ConnectLandingPage() {
           </Reveal>
         </div>
 
-        <p className="mt-10 text-center text-sm text-ae-warmgrey">
+        <p className="mt-10 text-center text-sm text-white/70">
           Not sure which one? Read{" "}
           <Link href="/learn" className="font-semibold text-ae-orange">
             Solar Basics

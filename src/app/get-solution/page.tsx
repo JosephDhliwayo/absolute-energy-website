@@ -39,7 +39,7 @@ export default function GetSolutionPage() {
 
       <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
         <Reveal>
-          <h2 className="font-heading text-2xl font-bold text-ae-charcoal">How It Works</h2>
+          <h2 className="font-heading text-2xl font-bold text-white">How It Works</h2>
         </Reveal>
         <div className="mt-8 grid gap-8 sm:grid-cols-3">
           {STEPS.map((item, i) => (
@@ -47,8 +47,8 @@ export default function GetSolutionPage() {
               <span className="flex h-10 w-10 items-center justify-center rounded-full bg-ae-orange font-heading text-lg font-bold text-white">
                 {item.step}
               </span>
-              <h3 className="mt-4 font-heading text-lg font-semibold text-ae-charcoal">{item.title}</h3>
-              <p className="mt-2 text-sm text-ae-warmgrey">{item.description}</p>
+              <h3 className="mt-4 font-heading text-lg font-semibold text-white">{item.title}</h3>
+              <p className="mt-2 text-sm text-white/70">{item.description}</p>
             </Reveal>
           ))}
         </div>
