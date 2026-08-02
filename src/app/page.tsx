@@ -236,7 +236,7 @@ export default function Home() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="bg-ae-charcoal text-white">
+      <section className="text-white">
         <div className="mx-auto max-w-6xl px-4 py-16 text-center sm:px-6">
           <Reveal>
             <h2 className="font-heading text-2xl font-bold sm:text-3xl">Ready to power your future?</h2>
