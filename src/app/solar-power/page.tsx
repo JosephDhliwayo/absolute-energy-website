@@ -64,10 +64,10 @@ export default function SolarPowerPage() {
         </div>
       </section>
 
-      <section className="bg-ae-lightgrey">
+      <section>
         <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6">
           <Reveal>
-            <h2 className="font-heading text-2xl font-bold text-ae-charcoal">Scale: Residential to Industrial</h2>
+            <h2 className="font-heading text-2xl font-bold text-white">Scale: Residential to Industrial</h2>
           </Reveal>
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             {SCALE.map((item, i) => (

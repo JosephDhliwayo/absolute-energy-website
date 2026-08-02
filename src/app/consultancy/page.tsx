@@ -36,11 +36,11 @@ export default function ConsultancyPage() {
         </section>
       </Reveal>
 
-      <section className="bg-ae-lightgrey">
+      <section>
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
           <Reveal>
-            <h2 className="font-heading text-2xl font-bold text-ae-charcoal">Energy Audits</h2>
-            <p className="mt-4 text-base leading-relaxed text-ae-warmgrey">
+            <h2 className="font-heading text-2xl font-bold text-white">Energy Audits</h2>
+            <p className="mt-4 text-base leading-relaxed text-white/70">
               We review your current electricity bill and usage pattern, and show you, in plain terms, the
               options available to reduce your costs and increase your power reliability. This can include
               efficiency changes, load management, battery backup, or a partial or full renewable energy
@@ -59,7 +59,7 @@ export default function ConsultancyPage() {
             ))}
           </div>
 
-          <p className="mt-8 text-sm italic text-ae-warmgrey">
+          <p className="mt-8 text-sm italic text-white/70">
             An audit is a conversation starter, not a DIY tool. Actual bill review happens through a
             consultation booked via AE Connect.
           </p>

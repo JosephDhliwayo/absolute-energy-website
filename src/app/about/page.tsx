@@ -59,11 +59,11 @@ export default function AboutPage() {
         </section>
       </Reveal>
 
-      <section className="bg-ae-lightgrey">
+      <section>
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
           <div className="grid gap-6 sm:grid-cols-3">
             <Reveal delayMs={0}>
-              <div className="h-full rounded-xl bg-ae-charcoal p-6 text-white transition-transform duration-200 hover:-translate-y-1">
+              <div className="h-full rounded-xl border border-white/15 bg-ae-charcoal p-6 text-white transition-transform duration-200 hover:-translate-y-1">
                 <h3 className="font-heading text-sm font-semibold uppercase tracking-wide text-ae-orange">
                   Mission
                 </h3>
@@ -75,7 +75,7 @@ export default function AboutPage() {
               </div>
             </Reveal>
             <Reveal delayMs={100}>
-              <div className="h-full rounded-xl bg-ae-charcoal p-6 text-white transition-transform duration-200 hover:-translate-y-1">
+              <div className="h-full rounded-xl border border-white/15 bg-ae-charcoal p-6 text-white transition-transform duration-200 hover:-translate-y-1">
                 <h3 className="font-heading text-sm font-semibold uppercase tracking-wide text-ae-orange">
                   Vision
                 </h3>
@@ -86,7 +86,7 @@ export default function AboutPage() {
               </div>
             </Reveal>
             <Reveal delayMs={200}>
-              <div className="h-full rounded-xl bg-ae-charcoal p-6 text-white transition-transform duration-200 hover:-translate-y-1">
+              <div className="h-full rounded-xl border border-white/15 bg-ae-charcoal p-6 text-white transition-transform duration-200 hover:-translate-y-1">
                 <h3 className="font-heading text-sm font-semibold uppercase tracking-wide text-ae-orange">
                   Goal
                 </h3>

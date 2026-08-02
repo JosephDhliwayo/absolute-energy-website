@@ -32,11 +32,11 @@ export default function PackagesPage() {
         </section>
       </Reveal>
 
-      <section className="bg-ae-lightgrey">
+      <section>
         <Reveal>
           <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
-            <h2 className="font-heading text-2xl font-bold text-ae-charcoal">Residential Water Pumping</h2>
-            <p className="mt-3 text-sm text-ae-warmgrey">
+            <h2 className="font-heading text-2xl font-bold text-white">Residential Water Pumping</h2>
+            <p className="mt-3 text-sm text-white/70">
               Standard residential water pumping/irrigation packages guided up to 20,000 litres per day.
               Because pumping is far more site-sensitive than power, AE Connect always asks for borehole
               depth, distance from storage to pump location, total dynamic head (TDH), daily water requirement

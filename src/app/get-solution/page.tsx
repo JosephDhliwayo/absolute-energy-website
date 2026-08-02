@@ -54,7 +54,7 @@ export default function GetSolutionPage() {
         </div>
       </section>
 
-      <section className="bg-ae-lightgrey">
+      <section>
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
           <div className="grid gap-6 sm:grid-cols-2">
             <Reveal delayMs={0}>

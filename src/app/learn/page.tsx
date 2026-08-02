@@ -68,11 +68,11 @@ export default function LearnPage() {
         </div>
       </section>
 
-      <section className="bg-ae-lightgrey">
+      <section>
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
           <Reveal>
-            <h2 className="font-heading text-2xl font-bold text-ae-charcoal">Not All Appliances Are Equal</h2>
-            <p className="mt-3 text-base leading-relaxed text-ae-warmgrey">
+            <h2 className="font-heading text-2xl font-bold text-white">Not All Appliances Are Equal</h2>
+            <p className="mt-3 text-base leading-relaxed text-white/70">
               Not every appliance places the same demand on a solar system. Two homes with the exact same
               total wattage can still need very different system sizes. Here&apos;s why:
             </p>
@@ -99,8 +99,8 @@ export default function LearnPage() {
             </table>
           </div>
 
-          <p className="mt-6 text-sm leading-relaxed text-ae-warmgrey">
-            <strong className="text-ae-charcoal">Why does this matter to you?</strong> Appliances with a
+          <p className="mt-6 text-sm leading-relaxed text-white/70">
+            <strong className="text-white">Why does this matter to you?</strong> Appliances with a
             motor or compressor need an extra kick of power just to switch on. Our calculator automatically
             adds this safety margin, so your system starts everything in your home reliably. You don&apos;t
             need to work out anything yourself.

@@ -44,10 +44,10 @@ export default function WaterPumpingPage() {
         </ul>
       </section>
 
-      <section className="bg-ae-lightgrey">
+      <section>
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
           <Reveal>
-            <h2 className="font-heading text-2xl font-bold text-ae-charcoal">Applications</h2>
+            <h2 className="font-heading text-2xl font-bold text-white">Applications</h2>
           </Reveal>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             {APPLICATIONS.map((item, i) => (

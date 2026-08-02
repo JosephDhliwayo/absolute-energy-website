@@ -197,10 +197,10 @@ export default function Home() {
       </section>
 
       {/* Why Absolute Energy */}
-      <section className="bg-ae-lightgrey">
+      <section>
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
           <Reveal>
-            <h2 className="font-heading text-2xl font-bold text-ae-charcoal sm:text-3xl">
+            <h2 className="font-heading text-2xl font-bold text-white sm:text-3xl">
               Why Absolute Energy
             </h2>
           </Reveal>
