@@ -65,7 +65,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-ae-charcoal text-white">
+      <section className="text-white">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
           <p className="animate-fade-in-up font-heading text-sm font-semibold uppercase tracking-wide text-ae-orange">
             Powering Your Future
